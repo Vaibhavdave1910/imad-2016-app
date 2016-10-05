@@ -17,12 +17,13 @@ var articles={
  'article-two':{ 
      title : 'article two | vaibhav dave',
   heading : 'article 2',
-  content : `<p>this is my first web site`},
+  content : `<p>this is my first web site</p>`
+  },
 
  'article-three':{
      title : 'article three | vaibhav dave',
   heading : 'article 3',
-  content : `<p>this is my first web site`}
+  content : `<p>this is my first web site</p>`}
 };
 function createTemplate(data){
     var title=data.title;
