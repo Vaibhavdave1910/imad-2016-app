@@ -5,14 +5,27 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne={
+var articals={
+
+'article-one': {
   title : 'article one | vaibhav dave',
   heading : 'article 1',
   content : `<p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>
             
             <p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>
             
-            <p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>`};
+            <p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>`},
+
+'artical-two':{
+  title : 'article two | vaibhav dave',
+  heading : 'article 2',
+  content : `<p>this is my first web site</p>`},
+
+ 'artical-three':{title : 'article two | vaibhav dave',
+  heading : 'article 2',
+  content : `<p>this is my first web site</p>`},
+};
+
 
 function createTemplate(data){
     var title=data.title;
@@ -45,8 +58,10 @@ var htmlTemplate=`<html>
 `;
 return htmlTemplate;
 }
+
 app.get('/:articleName',function(req,res){
-    res.send(createTemplate(articleOne));
+    var articalName = rqe.params.articalName;
+    res.send(createTemplate(articles[articalName]));
 });
 
 app.get('/', function (req, res) {
