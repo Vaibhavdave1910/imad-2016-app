@@ -18,7 +18,7 @@ app.get('/article-two',function(req,res){
 });
 
 app.get('/article-three',function(req,res){
-    res.send('ai cha gavat');
+    res.sendFile(path.join(__dirname, 'ui', 'imad-2016-app/ui/maxresdefault.jpg'));
 });
 
 app.get('/ui/style.css', function (req, res) {
