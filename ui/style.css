@@ -21,10 +21,10 @@ body {
 }
 
 .container{
-            max-width: 800px;
-            margin: 0 auto;
-            color: #565252;
-            font-family: sans-serif;
+   max-width: 800px;
+   margin: 0 auto;
+   color: #565252;
+   font-family: sans-serif;
             
      
  }
