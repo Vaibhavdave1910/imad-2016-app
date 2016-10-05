@@ -25,9 +25,6 @@ var articles={
   heading : 'article 3',
   content : `<p>this is my first web site</p>`}
 };
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
 
 function createTemplate(data){
     var title=data.title;
@@ -63,6 +60,10 @@ return htmlTemplate;
 var articlename=req.params.articleName;
 app.get('/:articleName',function(req,res){
     res.send(createTemplate(articles[articleName]));
+});
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
