@@ -14,10 +14,13 @@ var articles={
             <p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>
             
             <p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>`},
- 'article-two':{ title : 'article two | vaibhav dave',
+ 'article-two':{ 
+     title : 'article two | vaibhav dave',
   heading : 'article 2',
   content : `<p>this is my first web site`},
- 'article-three':{title : 'article three | vaibhav dave',
+
+ 'article-three':{
+     title : 'article three | vaibhav dave',
   heading : 'article 3',
   content : `<p>this is my first web site`}
 };
