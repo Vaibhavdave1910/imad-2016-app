@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne ={
+var articles = 
+articleOne: {
 
     title:'article one|vaibhav dave',
     heading:'article one',
@@ -14,7 +15,18 @@ var articleOne ={
             <p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>
             
             <p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>`
-};
+},
+articleTwo:{title:'article two|vaibhav dave',
+    heading:'article two',
+    content:`<p>this is my second web site</p>`
+    
+}
+    
+articlethree:{title:'article two|vaibhav dave',
+    heading:'article two',
+    content:`<p>this is my second web site</p>`
+    }
+    
     
 function createTemplate(data){
     var title=data.title;
@@ -52,8 +64,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req,res) {
-    res.send(createTemplate(articleOne));
+app.get('/:articalName', function (req,res) {
+    res.send(createTemplate(articles[articalName]));
 });
 
 app.get('/article-two',function(req,res){
