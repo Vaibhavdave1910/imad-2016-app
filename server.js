@@ -6,9 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-article-one:{
-
-    title:'article one|vaibhav dave',
+articleone:{ title:'article one|vaibhav dave',
     heading:'article one',
     content:`<p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>
             
@@ -16,12 +14,12 @@ article-one:{
             
             <p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>`
 },
-article-two:{title:'article two|vaibhav dave',
+articletwo:{title:'article two|vaibhav dave',
     heading:'article two',
     content:`<p>this is my second web site</p>`
     
 },
-article-three:{title:'article two|vaibhav dave',
+articlethree:{title:'article two|vaibhav dave',
     heading:'article two',
     content:`<p>this is my second web site</p>`
     },
