@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-articleone:{ title:'article one|vaibhav dave',
+article-one:{ title:'article one|vaibhav dave',
     heading:'article one',
     content:`<p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>
             
@@ -14,17 +14,15 @@ articleone:{ title:'article one|vaibhav dave',
             
             <p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>`
 },
-articletwo:{title:'article two|vaibhav dave',
+article-two:{title:'article two|vaibhav dave',
     heading:'article two',
     content:`<p>this is my second web site</p>`
     
 },
-articlethree:{title:'article two|vaibhav dave',
+article-three:{title:'article two|vaibhav dave',
     heading:'article two',
     content:`<p>this is my second web site</p>`
     },
-
-    
 };
     
     
