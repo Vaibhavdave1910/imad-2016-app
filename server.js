@@ -60,7 +60,7 @@ return htmlTemplate;
 }
 
 app.get('/:articleName',function(req,res){
-    var articalName = rqe.params.articalName;
+    var articalName = req.params.articalName;
     res.send(createTemplate(articles[articalName]));
 });
 
