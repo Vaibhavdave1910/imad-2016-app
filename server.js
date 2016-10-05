@@ -13,6 +13,9 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+app.get('/eena', function(req,res) {
+    res.send("joy");
+});
 app.get('/Pokemon-PNG-HD.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'Pokemon-PNG-HD.png'));
 });
