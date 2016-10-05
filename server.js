@@ -5,26 +5,14 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articles={
-'article-one':{
+var articleOne={
   title : 'article one | vaibhav dave',
   heading : 'article 1',
   content : `<p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>
             
             <p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>
             
-            <p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>`},
- 'article-two':{ 
-     title : 'article two | vaibhav dave',
-  heading : 'article 2',
-  content : `<p>this is my first web site</p>`
-  },
-
- 'article-three':{
-     title : 'article three | vaibhav dave',
-  heading : 'article 3',
-  content : `<p>this is my first web site</p>`}
-};
+            <p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>`};
 
 function createTemplate(data){
     var title=data.title;
@@ -57,9 +45,8 @@ var htmlTemplate=`<html>
 `;
 return htmlTemplate;
 }
-var articlename=req.params.articleName;
 app.get('/:articleName',function(req,res){
-    res.send(createTemplate(articles[articleName]));
+    res.send(createTemplate(articlesOne));
 });
 
 app.get('/', function (req, res) {
