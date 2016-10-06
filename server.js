@@ -21,7 +21,8 @@ var articles={
   heading : 'article 2',
   content : `<p>this is my first web site</p>`},
 
- 'artical-three':{title : 'article two | vaibhav dave',
+ 'artical-three':{
+  title : 'article two | vaibhav dave',
   heading : 'article 2',
   content : `<p>this is my first web site</p>`},
 };
