@@ -16,12 +16,12 @@ var articles={
             
             <p>this is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web sitethis is my first web site</p>`},
 
-'artical-two':{
+'article-two':{
   title : 'article two | vaibhav dave',
   heading : 'article 2',
   content : `<p>this is my first web site</p>`},
 
- 'artical-three':{
+ 'article-three':{
   title : 'article two | vaibhav dave',
   heading : 'article 2',
   content : `<p>this is my first web site</p>`},
@@ -61,8 +61,8 @@ return htmlTemplate;
 }
 
 app.get('/:articleName',function(req,res){
-    var articalName = req.params.articalName;
-    res.send(createTemplate(articles[articalName]));
+    var articleName = req.params.articleName;
+    res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/', function (req, res) {
