@@ -6,17 +6,17 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-articleOne :{
+article-one :{
   title : 'Article One | Vaibhav Dave',
   heading : 'welcome to Aricle One',
   content : '<p> this is my first website',
 },
-articleTwo :{
+article-two :{
   title : 'Article One | Vaibhav Dave',
   heading : 'welcome to Aricle One',
   content : '<p> this is my first website</p>',
 },
-articleThree :{
+article-three :{
   title : 'Article Three | Vaibhav Dave',
   heading : 'welcome to Aricle Three',
   content : '<p> this is my first website</p>',
