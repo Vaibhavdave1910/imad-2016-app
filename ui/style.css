@@ -1,8 +1,10 @@
 body {
+    
     font-family: sans-serif;
-    background-color: lightgrey;
+    background-color: rgba(105, 99, 97, 0.76);
     margin-top: 75px;
 }
+    
 
 .center {
     text-align: center;
