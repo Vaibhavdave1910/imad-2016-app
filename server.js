@@ -39,7 +39,7 @@ var htmlTemplate = `
     <body>
         <div class="container">
         <div>
-            <a href="/">home</a>
+            <a href="/"><--Go Back Simon</a>
         </div>
         <hr/>
         
