@@ -12,13 +12,13 @@ var articles = {
   content : '<p> this is my first website</p>',
 },
 'article-two' :{
-  title : 'Article One | Vaibhav Dave',
-  heading : 'welcome to Aricle One',
+  title : 'Article Two| Vaibhav Dave',
+  heading : 'welcome to Article One',
   content : '<p> this is my first website</p>',
 },
 'article-three' :{
   title : 'Article Three | Vaibhav Dave',
-  heading : 'welcome to Aricle Three',
+  heading : 'welcome to Article Three',
   content : '<p> this is my first website</p>',
 },
 };
