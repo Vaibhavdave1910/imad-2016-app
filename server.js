@@ -13,7 +13,7 @@ var articles = {
 },
 'article-two' :{
   title : 'Article Two| Vaibhav Dave',
-  heading : 'welcome to Article One',
+  heading : 'welcome to Article Two',
   content : '<p> this is my first website</p>',
 },
 'article-three' :{
