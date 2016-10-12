@@ -4,7 +4,7 @@ var element = document.getElementById('main text');
 element.innerHTML=('hi all');
 
 var img = document.getElementById('img');
-var marinLeft=0;
+var marginLeft=0;
 function moveRight(){
     marginLeft = marginLeft + 10;
     img.style.marginLeft + 'px';
